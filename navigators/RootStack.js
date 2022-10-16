@@ -6,6 +6,7 @@ import CropsScreen from "../screens/CropsScreen";
 import BottomTabs from "./tabs";
 import CropDetailScreen from "../screens/CropDetailScreen";
 import CreateFarm from "../screens/CreateFarm";
+import CalendarScreen from "../screens/Calender";
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +48,23 @@ const RootStack = () => {
             headerShown: true,
             headerTitleAlign: "center",
             headerTitle: "Create a Farm",
+            headerTintColor: "white",
+            headerShadowVisible: true,
+            headerStyle: {
+              backgroundColor: "green",
+            },
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
+          name="Calendar"
+          component={CalendarScreen}
+          options={{
+            headerShown: true,
+            headerTitleAlign: "center",
+            headerTitle: "Events",
             headerTintColor: "white",
             headerShadowVisible: true,
             headerStyle: {

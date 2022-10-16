@@ -41,7 +41,7 @@ const HomeScreen = ({ navigation }) => {
         <TouchableOpacity
           style={{ alignItems: "center" }}
           onPress={() => {
-            navigation.navigate("CropDetails", {
+            navigation.navigate("Calendar", {
               name: item.name,
               description: item.description,
               image: item.icon,
